@@ -1,0 +1,77 @@
+*{
+    margin: 0;    /*retira margen por defecto*/
+    padding: 0;  /*retirar imagen interno */
+    --color1:#F2D027;
+    --color2:#403501;
+    --color3:#0D0D0D;
+    --color4:#F2F2F2;
+    --color5:#BF705E;
+}
+img{
+    max-width: 100%; /*Limíta la dimensión de la imagen con respecto al CONTENEDOR (padre)*/
+    display:block;
+    margin: auto;
+}
+body{
+    background-image: url(imagenes/sw_fondo.jpg);
+}
+#contenedor{
+    text-align: center;
+
+    border:3px solid white; /*borde*/
+    width: 90%; /*espacio por usar*/
+    margin: 65px auto; /*auto=centra, 65px arriba*/
+}
+#encabezado{
+    border:4px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#contenido{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+.Episodio{
+    width: 30%; /*CENTRA EL TEXTO (IMPORTANTE)*/
+    padding: 35px;
+    margin: 10px;        /*Espacio de los bloques*/
+    border: 1px solid var(--color2);
+}
+#pie{   
+    text-align: center;
+}
+h1,h2,h3{
+    /*fuente*/
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;  
+    /*fuente*/
+
+    color: var(--color1);
+    text-align: center;
+    padding: 10px;
+}
+p{
+    text-align: justify;
+    color: var(--color4);
+    
+    /*fuente*/
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    /*fuente*/
+
+}
+a{
+    color: white;
+}
+hr{
+    color: var(--color5);
+    margin: 5px;
+    padding: 5px;
+}
